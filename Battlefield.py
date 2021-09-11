@@ -1,9 +1,15 @@
+from fleet import Fleet
+from herd import Herd
+
 class Battlefield:
     def __init__(self):
-        pass
+        self.fleet = Fleet()
+        self.herd = Herd()
 
     def run_game(self):
-        self.display_welcome
+        self.display_welcome()
+        self.battle()
+        self.display_winners()
 
     def display_welcome(self):
         print("Welcome to Dino Vs. Robots!!")
@@ -24,4 +30,7 @@ class Battlefield:
         pass
 
     def display_winners(self):
-        pass
+        if len(self.fleet.robots) > len(self.herd.dinosaurs):
+            print('Robots are here to stay! Asta la vista, Dinosaurs')
+        else:
+            print('Dinosaurs win! Dinosaurs, Uh ..find a way!')
