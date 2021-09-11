@@ -65,6 +65,6 @@ class Battlefield:
 
     def display_winners(self):
         if len(self.fleet.robots) > len(self.herd.dinosaurs):
-            print('Robots are here to stay! Asta la vista, Dinosaurs')
+            print('Robots are here to stay! Asta la vista, Dinosaurs!')
         else:
             print('Dinosaurs win! Dinosaurs, Uh ..find a way!')
