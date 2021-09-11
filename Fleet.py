@@ -9,6 +9,5 @@ class Fleet:
         robo1 = Robot('T1000', 500)
         robo2 = Robot('R2D2', 50)
         robo3 = Robot('Johnny 5', 200)
-        robo4 = Robot('Wall-E', 12)
 
-        self.robots.extend([robo1, robo2, robo3, robo4])
+        self.robots.extend([robo1, robo2, robo3])
